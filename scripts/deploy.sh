@@ -1,4 +1,5 @@
-#!/bin/bash set -e 
+#!/bin/bash 
+set -e 
 # Multi-Environment Deploy Script 
 # Default to production if not specified 
 DEPLOY_ENV=${DEPLOY_ENV:-production} 
@@ -29,5 +30,4 @@ else
     echo "Error: Unknown environment $DEPLOY_ENV" 
     exit 1 
 fi 
-
 echo "Deployment completed successfully!" 
